@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>switcher</title>
 </head>
 <body>
-    
+    <header>
+        <img src="/images/logotipo_dnc_principal_branco.png" alt="logo_dnc" width="100">
+        <h1 id="title">Lâmpada</h1>
+    </header>
+    <section>
+        <div id="div_info">
+            <img id="lampada" src="images/ligada.svg" alt="" onclick="trocaLampada('quebrada.svg')">
+        </div>
+        <div id="div_response">
+            <input type="button" value="Ligar" onclick="trocaLampada('ligada.svg')">
+            <input type="button" value="Desligar" onclick="trocaLampada('apagada.svg')">       
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>

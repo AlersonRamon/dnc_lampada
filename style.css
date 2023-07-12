@@ -1,0 +1,72 @@
+:root{
+    --brancodnc: #efebe4;
+    --fonteescuradnc: #303030;
+}
+
+
+body {
+    background-color: var(--fonteescuradnc);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#div_response {
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+header {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+#title {
+    justify-self: center;
+    color: aliceblue;
+}
+
+section{
+    text-align: center;
+    background-color: var(--brancodnc);
+
+    width: 50%;
+    max-width: 530px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: auto;
+    
+}
+ input{
+    border: none;
+    border-radius: 5px;
+ }
+
+input[type="button"]:hover{
+    background-color: #66a4f7;
+    outline: none;
+    box-shadow: inset -2px -2px 2px  #30303086 ;
+}
+
+input[type="button"]:active{
+    background-color: #f79466;
+    outline: none;
+    box-shadow: inset -2px -2px 2px  #30303086 ;
+}
+
+
+input[type="button"]{ 
+    background-color: rgb(12, 112, 242);
+    color: var(--brancodnc);
+    font-weight: bold;
+    font-size: 15px;
+
+    margin-top: 10px;
+    width: 20%;
+    min-width: 100px;
+    height: 25px;
+}
+
+#lampada:active {
+    background-color: black;
+}
+
